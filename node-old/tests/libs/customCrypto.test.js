@@ -126,7 +126,7 @@ describe("both", function () {
         });
         it("wrong scrypt", function () {
           customCrypto = require("../../src/libs/customCrypto")({ bcryptRounds: 1, scryptRounds: 333 });
-          return customCrypto.encrypt("urlData", "password").should.be.rejectedWith("Invalid scrypt parameter");
+          return customCrypto.encrypt("urlData", "password").should.be.rejectedWith("Invalid scrypt params");
         });
       });
       context("decrypt", function () {
@@ -138,7 +138,7 @@ describe("both", function () {
         });
         it("wrong scrypt", function () {
           customCrypto = require("../../src/libs/customCrypto")({ bcryptRounds: 1, scryptRounds: 77 });
-          return customCrypto.decrypt(urlData, "password").should.be.rejectedWith("Invalid scrypt parameter");
+          return customCrypto.decrypt(urlData, "password").should.be.rejectedWith("Invalid scrypt params");
         });
       });
     });
