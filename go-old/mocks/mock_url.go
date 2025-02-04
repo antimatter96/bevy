@@ -5,7 +5,7 @@
 package mock_url
 
 import (
-	url "github.com/antimatter96/awter-go/db/url"
+	url "awter-go/db/url"
 	gomock "github.com/golang/mock/gomock"
 	reflect "reflect"
 )

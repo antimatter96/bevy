@@ -1,6 +1,6 @@
-FROM golang:1.14-alpine AS build_base
+FROM golang:1.23-alpine AS build_base
 
-ENV GOLANG_VERSION 1.14
+ENV GOLANG_VERSION 1.23
 ENV GO111MODULE=on
 
 RUN apk add bash ca-certificates git gcc g++ libc-dev

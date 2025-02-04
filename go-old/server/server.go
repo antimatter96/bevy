@@ -6,11 +6,12 @@ import (
 	"html/template"
 	"net/http"
 
-	"github.com/go-chi/chi"
+	"github.com/go-chi/chi/v5"
 	"github.com/gorilla/securecookie"
 
-	"github.com/antimatter96/awter-go/customcrypto"
-	"github.com/antimatter96/awter-go/db/url"
+	"awter-go/customcrypto"
+
+	"awter-go/db/url"
 )
 
 type contextKey int

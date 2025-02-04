@@ -8,15 +8,18 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/go-chi/chi"
-	"github.com/go-chi/chi/middleware"
+	"github.com/go-chi/chi/v5"
+	"github.com/go-chi/chi/v5/middleware"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/hlog"
 
-	"github.com/antimatter96/awter-go/customcrypto"
-	"github.com/antimatter96/awter-go/db"
-	"github.com/antimatter96/awter-go/db/url"
-	"github.com/antimatter96/awter-go/server"
+	"awter-go/customcrypto"
+
+	"awter-go/db"
+
+	"awter-go/db/url"
+
+	"awter-go/server"
 )
 
 var build string

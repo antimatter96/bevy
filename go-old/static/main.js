@@ -1,7 +1,7 @@
 window.history.pushState('page2', 'Title', '/page2.php');
 
 function showHidePasswordParent(passwordInputId) {
-  return function() {
+  return function () {
     let x = document.getElementById(urlPassword);
     if (x.type === "password") {
       x.type = "text";
@@ -11,10 +11,10 @@ function showHidePasswordParent(passwordInputId) {
   }
 }
 
-document.addEventListener("load", "read", function() {
+document.addEventListener("load", "read", function () {
   var showHidePassword = showHidePasswordParent("urlPassword");
 
-  document.getElementById("hidePassword").addEventListener("toggle", function() {
+  document.getElementById("hidePassword").addEventListener("toggle", function () {
     showHidePassword();
   })
 });

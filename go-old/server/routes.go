@@ -7,10 +7,12 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/antimatter96/awter-go/customcrypto"
-	"github.com/antimatter96/awter-go/db/url"
+	"awter-go/customcrypto"
+
+	"awter-go/db/url"
+
 	"github.com/asaskevich/govalidator"
-	"github.com/go-chi/chi"
+	"github.com/go-chi/chi/v5"
 	"github.com/rs/zerolog/hlog"
 )
 
